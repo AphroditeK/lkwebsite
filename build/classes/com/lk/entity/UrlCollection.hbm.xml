@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-3-19 14:59:57 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.lk.entity.UrlCollection" table="URLCOLLECTION">
+        <id name="id" type="java.lang.Integer">
+            <column name="c_ID" />
+            <generator class="native" />
+        </id>
+        <property name="account" type="java.lang.String">
+            <column name="u_ACCOUNT" />
+        </property>
+        <property name="name" type="java.lang.String">
+            <column name="c_NAME" />
+        </property>
+        <property name="url" type="java.lang.String">
+            <column name="c_URL" />
+        </property>
+        <property name="txt" type="java.lang.String">
+            <column name="c_TXT" />
+        </property>
+        <property name="collectionDate" type="java.util.Date">
+            <column name="c_date" />
+        </property>
+    </class>
+</hibernate-mapping>

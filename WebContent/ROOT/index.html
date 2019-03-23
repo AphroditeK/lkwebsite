@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>注册</title>
+		<style type="text/css">
+			div{
+				width: 300px;
+				height: 200px;
+				padding-top: 100px;
+				margin: 0 auto; 
+			}
+			img{
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="center">
+			<div class="regist">
+				<form action="/regist" method="post">
+					<table>
+						<tr>
+							<td>用户名：</td>
+							<td><input type="text" name="name"/></td>
+						</tr>
+						<tr>
+							<td>密码：</td>
+							<td><input type="password" name="password" /></td>
+						</tr>
+						<tr>
+							<td>请确认密码：</td>
+							<td><input type="password"/></td>
+						</tr>
+						<tr>
+							<td>验证码：</td>
+							<td><input type="text" name="code" /></td>
+						</tr>
+						<tr>
+							<td><img src="validateImage" id="image" onclick="change()"/></td>
+							<td><input type="submit" value="注册" id="regist"/></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+		
+		<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="UTF-8">
+			function change(){
+				document.getElementById("image").src="validateImage?"+Math.random();
+			};
+			$(function(){
+				
+			})
+		</script>
+	</body>
+</html>
